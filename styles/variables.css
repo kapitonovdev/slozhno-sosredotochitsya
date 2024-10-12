@@ -1,4 +1,28 @@
-/*
-  Переменные для вашего проекта
-  и их переопределение под различные устройства
-*/
+:root {
+  /* Общие переменные  */
+  --bg-color: #000028;
+  --padding: clamp(0.625rem, 0.0286rem + 2.5445vw, 1.25rem);
+  --main-font: 'IBMPlexMono';
+  --font-weight: 400;
+  --bg-image: url('../images/cover-image-dark.png');
+
+  /* Цвета акцентов и границ */
+  --accent-color: #FF0070;
+  --accent-bg-color: var(--accent-color);
+  --border-color: var(--accent-color);
+  --shadow-color: var(--accent-color);
+
+  /* Текстовые цвета */
+  --menu-color: var(--accent-color);
+  --title-color: #DB00FF; /* Цвет заголовка */
+  --subtitle-color: #000028; /* Цвет подзаголовка */
+  --text-color: #F1B2CE; /* Основной цвет текста */
+  --section-title-color: var(--accent-color);
+  --card-title-color: var(--subtitle-color);
+
+  /* Размеры шрифтов */
+  --fz-text: 18px; /* Основной текст */
+  --fz-h1: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem); /* Главный заголовок */
+  --fz-h2: var(--fz-text);
+  --fz-h3: var(--fz-text);
+}
