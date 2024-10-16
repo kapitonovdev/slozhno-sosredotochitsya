@@ -2,9 +2,10 @@
   /* Общие переменные  */
   --bg-color: #000028;
   --padding: clamp(0.625rem, 0.0286rem + 2.5445vw, 1.25rem);
-  --main-font: 'IBMPlexMono';
+  --main-font: 'IBMPlexMono', 'Lucida Console', 'Menlo', monospace;
   --font-weight: 400;
   --bg-image: url('../images/cover-image-dark.png');
+  --decor-line-height: 0.825;
 
   /* Цвета акцентов и границ */
   --accent-color: #FF0070;
@@ -14,6 +15,7 @@
 
   /* Текстовые цвета */
   --menu-color: var(--accent-color);
+  --menu-color-hover: hsla(330, 100%, 50%, 0.4);
   --title-color: #DB00FF; /* Цвет заголовка */
   --subtitle-color: #000028; /* Цвет подзаголовка */
   --text-color: #F1B2CE; /* Основной цвет текста */
@@ -21,8 +23,6 @@
   --card-title-color: var(--subtitle-color);
 
   /* Размеры шрифтов */
-  --fz-text: 18px; /* Основной текст */
-  --fz-h1: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem); /* Главный заголовок */
-  --fz-h2: var(--fz-text);
-  --fz-h3: var(--fz-text);
+  --title-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem); /* Главный заголовок */
+  --text-size: 18px;
 }

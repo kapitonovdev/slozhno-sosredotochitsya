@@ -11,9 +11,15 @@
   
   /* Текстовые цвета */
   --menu-color: var(--accent-color);
+  --menu-color-hover: hsla(330, 100%, 50%, 0.4);
   --title-color: #DB00FF; /* Цвет заголовка */
   --subtitle-color: #000028; /* Цвет подзаголовка */
   --text-color: #F1B2CE; /* Основной цвет текста */
   --section-title-color: var(--accent-color);
   --card-title-color: var(--subtitle-color);
+
+  .header__rec {
+    display: flex;
+  }
 }
+

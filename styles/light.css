@@ -11,6 +11,7 @@
 
   /* Текстовые цвета */
   --menu-color: #353430;
+  --menu-color-hover: rgba(50, 49, 45, 0.4);
   --title-color: #FFC2E6; /* Цвет заголовка */
   --subtitle-color: #353430; /* Цвет подзаголовка */
   --text-color: var(--subtitle-color); /* Основной цвет текста */
@@ -32,14 +33,15 @@
 
     /* Текстовые цвета */
     --menu-color: #353430;
+    --menu-color-hover: rgba(50, 49, 45, 0.4);
     --title-color: #FFC2E6; /* Цвет заголовка */
     --subtitle-color: #353430; /* Цвет подзаголовка */
     --text-color: var(--subtitle-color); /* Основной цвет текста */
     --section-title-color: var(--subtitle-color);
     --card-title-color: var(--subtitle-color);
   }
-}
 
-.page:not(.theme_dark) .header__rec {
-  display: none;
+  .header__rec {
+    display: none;
+  }
 }
