@@ -13,11 +13,11 @@
   background-attachment: fixed;
 }
 
-.title--strong {
+.title-strong {
   font-weight: 700;
 }
 
-.title--thin {
+.title-thin {
   font-weight: 400;
 }
 
@@ -117,25 +117,23 @@
 }
 
 /* Области сетки */
-.accent__heading {
+.heading-accent {
   color: var(--title-color, #DB00FF);
   font-size: var(--title-size, 116px);
-  line-height: 95.7px;
+  line-height: var(--decor-line-height, 0.825);
   text-shadow: 4px 4px 0 var(--shadow-color, #341321);
 }
 
 .header__title {
   justify-self: start;
-  line-height: var(--decor-line-height, 0.825);
 }
 
 .header__subtitle {
   height: min-content;
   color: var(--subtitle-color, #000028);
-  line-height: 23.4px;
 }
 
-.accent-bg {
+.title-decor {
   background-color: var(--accent-bg-color, #FF0070);
 }
 
@@ -157,7 +155,7 @@
   font-size: inherit;
 }
 
-.section--how .section__subtitle.accent-bg {
+.section-how .section__subtitle.title-decor {
   color: var(--subtitle-color, #000028);
   font-size: inherit;
 }
@@ -205,7 +203,7 @@
   outline-offset: -1px;
 }
 
-.section--visual-story {
+.section-visual-story {
   gap: 10px;
 }
 
@@ -252,50 +250,50 @@
     column-gap: 20px;
   }
 
-  .section--why,
-  .section--what,
-  .section--how {
+  .section-why,
+  .section-what,
+  .section-how {
     grid-template-columns: 1fr 2fr;
   }
 
-  .section--what {
+  .section-what {
     grid-template-rows: 1fr;
   }
 
-  .section--what .section__title {
+  .section-what .section__title {
     grid-column: 1 / 2;
     grid-row: 1 / 2;
   }
 
-  .section--what .card__list {
+  .section-what .card__list {
     grid-column: 1 / -1;
     grid-row: 2 / -1;
   }
 
-  .section--how {
+  .section-how {
     grid-template-rows: auto auto;
     grid-template-areas: 
       "title subtitle"
       "title content";
   }
 
-  .section--how .section__title {
+  .section-how .section__title {
     grid-area: title;
   }
   
-  .section--how .section__subtitle {
+  .section-how .section__subtitle {
     grid-area: subtitle;
   }
   
-  .section--how .card__list {
+  .section-how .card__list {
     grid-area: content;
   }
 
-  .section--visual-story {
+  .section-visual-story {
     gap: 20px;
   }
 
-  .section--visual-story .card__title {
+  .section-visual-story .card__title {
     margin-bottom: 0;
   }
 
@@ -346,17 +344,17 @@
     padding: 0 12.5px;
   }
 
-  .section--why,
-  .section--how {
+  .section-why,
+  .section-how {
     column-gap: 10px;
   }
 
-  .section--what .card__list {
+  .section-what .card__list {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
   }
 
-  .section--what .card__item {
+  .section-what .card__item {
     margin-bottom: 0;
   }
 }

@@ -17,6 +17,10 @@
   --text-color: var(--subtitle-color); /* Основной цвет текста */
   --section-title-color: var(--subtitle-color);
   --card-title-color: var(--subtitle-color);
+
+  .header__rec {
+    display: none;
+  }
 }
 
 @media (prefers-color-scheme: light) {
